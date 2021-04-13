@@ -25,6 +25,7 @@ export default function Home() {
           src={"/page-arizona-elopement-1.jpeg"}
           layout="fill"
           objectFit="cover"
+          quality={100}
           alt="Couple poses with a backdrop of Arizona nature reserve for elopement"
         />
       </main>
