@@ -1,64 +1,54 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import styles from '../styles/Landing.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Destination Wedding and Elopement Photographer || Brigette Burgman</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
+      <header className={styles.header}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
+          href="/"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img src="/brand-transparent.png" alt="Vercel Logo" className={styles.logo} />
         </a>
+      </header>
+
+      <main className={styles.main}>
+        <Image
+          src={"/page-arizona-elopement-1.jpeg"}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          alt="Couple poses with a backdrop of Arizona nature reserve for elopement"
+        />
+      </main>
+      <footer className={styles.footer}>
+        <form className={styles.form} action="" method="POST">
+          <label htmlFor="email">
+            Email
+            <input className={styles.input} id="email" type="email" autoComplete="email" required />
+          </label>
+          <label htmlFor="name">
+            Name
+            <input className={styles.input} id="name" type="name" autoComplete="name" required />
+          </label>
+          <label htmlFor="date">
+            Projected date
+            <input className={styles.input} id="date" type="date" />
+          </label>
+          <label htmlFor="note">
+            Anything Else?
+            <input className={styles.input} id="note" type="text" />
+          </label>
+          <button type="submit">Plan Your Dreams</button>
+        </form>
       </footer>
     </div>
   )
