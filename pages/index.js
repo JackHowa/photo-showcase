@@ -16,7 +16,7 @@ export default function Home() {
           href="/"
           rel="noopener noreferrer"
         >
-          <img src="/brand-transparent.png" alt="Vercel Logo" className={styles.logo} />
+          <img src="/brand-transparent.png" alt="Brigette photography" className={styles.logo} />
         </a>
       </header>
 
