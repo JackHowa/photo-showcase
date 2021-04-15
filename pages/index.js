@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Landing.module.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsappSquare } from "@fortawesome/free-brands-svg-icons"
 const DESCRIPTION = 'Adventurous destination wedding and elopement photographer based in Chicago, Illinois, with a candid and adventurous style.';
 
 export default function Home() {
@@ -21,8 +22,8 @@ export default function Home() {
       <header className={styles.header}>
         <Image height="100" width="150" src="/brand-transparent.png" alt="Brigette photography" />
       </header>
-      <main className={styles.main}>
-        <Image
+      {/* <main className={styles.main}> */}
+      {/* <Image
           src={"/page-arizona-elopement-1.jpeg"}
           layout="fill"
           objectFit="cover"
@@ -30,27 +31,19 @@ export default function Home() {
           objectPosition={"right center"}
           alt="Couple poses with a backdrop of Arizona nature reserve for elopement"
         />
-      </main>
+      </main> */}
       <footer className={styles.footer}>
-        <form className={styles.form} action="" method="POST">
-          <label htmlFor="email">
-            Email
-            <input className={styles.input} id="email" type="email" autoComplete="email" required />
-          </label>
-          <label htmlFor="name">
-            Name
-            <input className={styles.input} id="name" type="name" autoComplete="name" required />
-          </label>
-          <label htmlFor="date">
-            Projected date
-            <input className={styles.input} id="date" type="date" />
-          </label>
-          <label htmlFor="note">
-            Anything Else?
-            <input className={styles.input} id="note" type="text" />
-          </label>
-          <button type="submit">Plan Your Dreams</button>
-        </form>
+        <div className={styles.itemContainer}>
+          <FontAwesomeIcon icon={faWhatsappSquare} />
+        </div>
+        <div className={styles.itemContainer}>
+          <FontAwesomeIcon icon={faWhatsappSquare} />
+        </div>
+        <div className={styles.itemContainer}>
+          <FontAwesomeIcon icon={faWhatsappSquare} />
+        </div>
+
+
       </footer>
     </div>
   )

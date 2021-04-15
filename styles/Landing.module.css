@@ -23,17 +23,13 @@
 
 .footer {
   min-width: 100%;
-  min-height: 20vh;
+  height: 20vh;
   padding: 0 2vw 0 2vw;
-}
-
-.form {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.input {
-  width: 100%;
-  min-height: 5vh;
+.itemContainer {
+  flex: 1;
 }
