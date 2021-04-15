@@ -8,7 +8,7 @@
 }
 
 .header {
-  height: 20vh;
+  height: 15vh;
   background-color: #66455b;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
 
 .main {
   position: relative;
-  min-height: 70vh;
+  min-height: 75vh;
   min-width: 100%;
 }
 

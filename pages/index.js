@@ -19,12 +19,7 @@ export default function Home() {
         <meta property="og:image:height" content="683" />
       </Head>
       <header className={styles.header}>
-        <a
-          href="#"
-          rel="noopener noreferrer"
-        >
-          <Image height="100" width="150px" src="/brand-transparent.png" alt="Brigette photography" />
-        </a>
+        <Image height="100" width="150" src="/brand-transparent.png" alt="Brigette photography" />
       </header>
       <main className={styles.main}>
         <Image
