@@ -20,10 +20,10 @@ export default function Home() {
       </Head>
       <header className={styles.header}>
         <a
-          href="/"
+          href="#"
           rel="noopener noreferrer"
         >
-          <img src="/brand-transparent.png" alt="Brigette photography" className={styles.logo} />
+          <Image height="100" width="150px" src="/brand-transparent.png" alt="Brigette photography" />
         </a>
       </header>
       <main className={styles.main}>
