@@ -19,12 +19,7 @@ export default function Home() {
         <meta property="og:image:height" content="683" />
       </Head>
       <header className={styles.header}>
-        <a
-          href="/"
-          rel="noopener noreferrer"
-        >
-          <img src="/brand-transparent.png" alt="Brigette photography" className={styles.logo} />
-        </a>
+        <Image height="100" width="150" src="/brand-transparent.png" alt="Brigette photography" />
       </header>
       <main className={styles.main}>
         <Image
@@ -32,6 +27,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           quality={100}
+          objectPosition={"right center"}
           alt="Couple poses with a backdrop of Arizona nature reserve for elopement"
         />
       </main>

@@ -8,21 +8,16 @@
 }
 
 .header {
-  height: 20vh;
+  height: 15vh;
   background-color: #66455b;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo {
-  height: 5em;
-  padding: 0 0.25em;
-}
-
 .main {
   position: relative;
-  min-height: 70vh;
+  min-height: 75vh;
   min-width: 100%;
 }
 
