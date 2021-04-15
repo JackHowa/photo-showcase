@@ -32,6 +32,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           quality={100}
+          objectPosition={"right center"}
           alt="Couple poses with a backdrop of Arizona nature reserve for elopement"
         />
       </main>
